@@ -1,0 +1,241 @@
+/* Common page styles */
+a {
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+.bold {
+    font-weight: bold;
+}
+
+.main {
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+input[type="checkbox"],
+input[type="radio"] {
+    display: none;
+}
+
+input[type="checkbox"] + label,
+input[type="radio"] + label {
+    font: 16px bold;
+    color: #444;
+    cursor: pointer;
+}
+
+input[type="checkbox"] + label::before,
+input[type="radio"] + label::before {
+    content: "";
+    display: inline-block;
+    height: 16px;
+    width: 16px;
+    margin: 0 5px 0 0;
+    background-image: url("../images/sprite.png");
+    background-repeat: no-repeat;
+}
+
+
+input[type="checkbox"] + label::before {
+    height: 17px;
+    width: 17px;
+}
+
+input[type="checkbox"] + label::before {
+    background-position: -38px -260px;
+}
+
+input[type="radio"] + label::before {
+    background-position: 0px -279px;
+}
+
+input[type="checkbox"]:checked + label::before {
+    background-position: -114px -260px;
+}
+
+input[type="radio"]:checked + label::before {
+    background-position: -108px -279px;
+}
+
+input[type="checkbox"]:disabled + label::before {
+    background-position: -152px -260px;
+}
+
+input[type="checkbox"]:checked:disabled + label::before {
+    background-position: -171px -260px;
+}
+
+input[type="radio"]:disabled + label::before {
+    background-position: -144px -279px;
+}
+
+input[type="radio"]:checked:disabled + label::before {
+    background-position: -162px -279px;
+}
+
+button {
+    background: url("../images/button.png") no-repeat;
+    border: none;
+    width: 121px;
+    height: 26px;
+    text-align: left;
+  padding-left: 10px;
+    margin-top: 10px;
+}
+
+button:hover {
+    background-position: 0px -56px;
+}
+
+button:active {
+    background-position: 0px -28px;
+}
+
+label {
+    display: block;
+    font-size: 15px;
+    font-family: Geneva, Arial, Helvetica, sans-serif;
+}
+
+fieldset {
+    padding: 0;
+
+    margin: 10px 0 0;
+    border: none;
+}
+
+legend {
+    font-size: 20px;
+}
+
+.hover {
+    position: relative;
+
+}
+
+.tooltip {
+    top: 5px;
+    left: 80px;
+    background-color: rgba(0, 0, 0, 0.5);;
+    color: white;
+    border-radius: 3px;
+    opacity: 0;
+    padding: 5px;
+    position: absolute;
+    -webkit-transition: opacity 0.5s;
+    -moz-transition: opacity 0.5s;
+    -ms-transition: opacity 0.5s;
+    -o-transition: opacity 0.5s;
+    transition: opacity 0.5s;
+}
+
+.hover:hover .tooltip {
+    opacity: 1;
+}
+
+.tab-list {
+    margin: 0px;
+    padding: 0px;
+    list-style: none;
+    margin-left: 5px;
+    position: relative;
+    z-index: 2;
+
+}
+
+.tab-list li {
+    display: inline-block;
+    width: 112px;
+    border-top: 1px solid #ccc;
+    border-right: 1px solid #ccc;
+    border-left: 1px solid #ccc;
+    border-bottom: 1px solid #ccc;
+    padding-left: 10px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    background-color: #fff;
+    position: relative;
+    z-index: 1;
+    font-weight: bold;
+    color: #000088;
+    font-weight: bold;
+
+}
+
+.icon-star {
+    background-image: url("../images/star.png");
+    padding-left: 22px;
+    background-repeat: no-repeat;
+    background-position: left center;
+}
+
+.icon-tag {
+    background-image: url("../images/tag.png");
+    padding-left: 22px;
+    background-repeat: no-repeat;
+    background-position: left center;
+}
+
+.tab-list li.current {
+    border-bottom: 1px solid #fff;
+    color: #000;
+}
+
+.tab-content {
+    float: left;
+    margin-top: -1px;
+    border: 1px solid #ccc;
+    padding: 10px;
+    padding-left: 20px;
+
+}
+
+input[type="text"], textarea, select {
+    width: 350px;
+}
+
+.error {
+    margin-top: 30px;
+    padding: 5px;
+    border-width: 1px;
+}
+
+textarea {
+    padding: 0;
+    height: auto;
+}
+
+label {
+    margin-top: 5px;
+}
+
+.file-container {
+    background: url("../images/button.png") no-repeat;
+    border: none;
+    width: 121px;
+    height: 21px;
+    padding-top: 5px;
+    padding-left: 5px;
+
+}
+
+
+.file-container input {
+    filter: alpha(opacity=1);
+    -moz-opacity: 0.01;
+    opacity: 0.01;
+    width: 100%;
+
+}
+
+.file-container:hover {
+    background-position: 0px -56px;
+}
+
+.file-container:active {
+    background-position: 0px -28px;
+}

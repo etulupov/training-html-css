@@ -1,0 +1,146 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta http-equiv="content-type" content="application/xhtml+xml; charset=UTF-8"/>
+    <link rel="stylesheet" href="css/blueprint/screen.css" type="text/css" media="screen, projection"/>
+    <link rel="stylesheet" href="css/blueprint/print.css" type="text/css" media="print"/>
+    <!--[if IE]>
+    <link rel="stylesheet" href="css/blueprint/ie.css" type="text/css" media="screen, projection"/><![endif]-->
+    <link rel="stylesheet" href="css/form.css" type="text/css" media="screen, projection"/>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"
+            type="application/javascript"></script>
+
+
+    <title>Form</title>
+</head>
+<body>
+
+
+<!-- Root -->
+<div class="main container">
+
+    <ul class="tab-list span-14 last">
+        <li class="current">
+            <span class="icon-tag">Questionnaire</span>
+        </li>
+        <li>
+            <a href="" class="icon-star">Favorite</a>
+        </li>
+        <li>
+            <a href="">Other</a>
+        </li>
+    </ul>
+
+    <div class="tab-content span-14 last">
+
+        <form action="">
+            <fieldset>
+                <legend>Your personal data</legend>
+                <div class="span-11">
+                    <div class="span-5">
+
+                        <label for="username" class="hover">Enter your name<span
+                                class="tooltip"> Please fill the field!</span></label>
+                        <input type="text" name="username" id="username" maxlength="255" size="40"/>
+                    </div>
+                    <div class="span-5 last error">Required field!</div>
+                </div>
+                <div class="span-11">
+                    <div class="span-5">
+                        <label for="about" class="hover">Tell us about yourself<span class="tooltip"> Please fill the field!</span></label>
+                        <textarea name="about" id="about" rows="10" cols="40"></textarea>
+                    </div>
+                    <div class="span-5 last error">Required field!</div>
+                </div>
+
+                <div class="span-11">
+                    <div class="span-5">
+                        <label for="photo" class="hover">Upload your photo<span
+                                class="tooltip"> Please fill the field!</span></label>
+
+                        <div class="file-container">
+                            <span class="icon-star" id="photo-title">Choose file</span>
+                            <input type="file" name="photo" id="photo"/>
+                        </div>
+                    </div>
+                    <!--<div class="span-5 last error">Required field!</div>-->
+                </div>
+            </fieldset>
+
+
+            <fieldset>
+                <legend>Please answer some questions</legend>
+                <div class="span-11">
+                    <div class="span-5">
+                        <label for="os_name" class="hover">What is your favorite operating system?<span class="tooltip"> Please fill the field!</span></label>
+
+                        <select name="os_name" id="os_name">
+                            <option>None</option>
+                            <optgroup label="Linux">
+                                <option>Ubuntu</option>
+                                <option>Debian</option>
+                                <option>Mint</option>
+                            </optgroup>
+                            <optgroup label="MacOS">
+                                <option>MacOS X Leopard</option>
+                                <option>MacOS X Snow Leopard</option>
+                                <option>MacOS X Lion</option>
+                                <option>MacOS X Mountain Lion</option>
+                            </optgroup>
+                            <optgroup label="Windows">
+                                <option>Windows 3</option>
+                                <option>Windows 95</option>
+                                <option>Windows 98</option>
+                                <option>Windows 2000</option>
+                                <option>Windows XP</option>
+                                <option>Windows Vista</option>
+                                <option>Windows 7</option>
+                                <option>Windows 8</option>
+                            </optgroup>
+                        </select>
+                    </div>
+                    <div class="span-5 last error">Required field!</div>
+                </div>
+                <div class="span-11">
+                    <div class="span-5">
+                        <label class="hover">What is your favorite browser?<span
+                                class="tooltip"> Please fill the field!</span></label>
+                        <input type="radio" name="browser" id="browser-firefox" checked="checked"/>
+                        <label for="browser-firefox">Firefox</label>
+                        <input type="radio" name="browser" id="browser-opera"/>
+                        <label for="browser-opera">Opera</label>
+                        <input type="radio" name="browser" id="browser-ie"/>
+                        <label for="browser-ie">Internet Explorer</label>
+                    </div>
+                    <!--<div class="span-5 last error">Required field!</div>-->
+                </div>
+                <div class="span-11">
+                    <div class="span-5">
+                        <label class="hover">Did you agree to Term of Use?<span
+                                class="tooltip"> Please fill the field!</span></label>
+                        <input type="checkbox" name="browser" id="agreement"/>
+                        <label for="agreement">I agree</label>
+                    </div>
+                    <!--<div class="span-5 last error">Required field!</div>-->
+                </div>
+            </fieldset>
+
+            <p>
+                <button type="submit" name="first"><span class="icon-tag">Send!</span></button>
+            </p>
+        </form>
+    </div>
+</div>
+
+
+<script type="application/javascript">
+    $(document).ready(function () {
+        $('#photo-title').click(function () {
+            $("#photo").click();
+        });
+    });
+</script>
+
+</body>
+</html>
