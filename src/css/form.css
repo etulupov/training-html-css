@@ -204,6 +204,17 @@ input[type="text"], textarea, select {
     border-width: 1px;
 }
 
+.form-error {
+    margin-top: 10px;
+    padding: 5px;
+    border-width: 1px;    
+}
+
+.form-error ul {
+    margin: 0;
+
+}
+
 textarea {
     padding: 0;
     height: auto;
