@@ -187,6 +187,18 @@ a {
 
 }
 
+.weather .widget .icon-sunny {
+    background: url("../images/weather_sunny.png") no-repeat left center;
+    width: 65px;
+    height: 44px;
+}
+
+.weather .widget .icon-rain {
+    background: url("../images/weather_rain.png") no-repeat left center;
+    width: 65px;
+    height: 44px;
+}
+
 /* Main left menu */
 .left-menu {
     padding-right: 5px;
