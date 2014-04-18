@@ -355,15 +355,15 @@ a {
 .tab-second-header h2 {
     display: inline-block;
     margin: 0px;
-    padding: 0px;
-
+    padding: 3px 0px 0px 7px;
 }
 
 .tab-second-header .date {
-    padding-top: 9px;
+    padding-top: 11px;
     color: #ccc;
     text-align: right;
-
+    float: right;
+    padding-right: 5px;
 }
 
 .tab-list {
