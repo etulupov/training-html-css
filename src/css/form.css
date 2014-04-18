@@ -220,7 +220,7 @@ label {
     height: 21px;
     padding-top: 5px;
     padding-left: 5px;
-
+    cursor: pointer;
 }
 
 
@@ -229,7 +229,11 @@ label {
     -moz-opacity: 0.01;
     opacity: 0.01;
     width: 100%;
+    cursor: pointer;
+}
 
+.file-container .icon-star {
+    cursor: pointer;
 }
 
 .file-container:hover {
