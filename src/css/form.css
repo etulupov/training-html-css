@@ -244,3 +244,6 @@ label {
     background-position: 0px -28px;
 }
 
+button {
+    cursor: pointer;
+}
