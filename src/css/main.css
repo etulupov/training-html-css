@@ -276,7 +276,7 @@ a {
 
 }
 
-.list-right .list {
+.news-list .list {
     list-style: inside url("../images/bullet.png");
     display: block;
     float: left;
@@ -285,7 +285,7 @@ a {
     border-bottom: 2px #aaa solid;
 }
 
-.list-right .list li {
+.news-list .list li {
     margin: 0;
     padding: 0;
     float: left;
@@ -293,13 +293,13 @@ a {
     /*margin-right: -10px;*/
 }
 
-.list-right .list .left-column {
+.news-list .list .left-column {
     display: inline-block;
     width: 125px;
     font-size: 13px;
 }
 
-.list-right .list .right-column {
+.news-list .list .right-column {
     display: inline-block;
     width: 200px;
     margin-left: 10px;
@@ -313,16 +313,16 @@ a {
     display: inline-block;
 }
 
-.list-right {
+.news-list {
     float: left;
 }
 
-.list-right .list li {
+.news-list .list li {
     border-top: 1px solid #ccc;
     padding: 5px 0px 5px 0px;
 }
 
-.list-right .list-header {
+.news-list .list-header {
     float: left;
     width: 100%;
     padding: 10px 0px 5px;
