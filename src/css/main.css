@@ -1,17 +1,14 @@
 /* Common page styles */
 a {
     text-decoration: none;
+    font-family: Geneva, Arial, Helvetica, sans-serif;
 }
 
 a:hover {
     text-decoration: underline;
 }
 
-a {
-    font-family: Geneva, Arial, Helvetica, sans-serif;
-}
-
-.bold {
+.text-bold {
     font-weight: bold;
 }
 
