@@ -755,6 +755,22 @@ a {
     font-size: 15px;
 }
 
+.more-news ul {
+    padding: 0;
+    margin: 0;
+
+}
+
+.more-news ul li {
+    display: inline-block;
+    border-right: 1px #ccc solid;
+    padding-right: 5px;
+    padding-left: 5px;
+}
+.more-news ul li:last-child {
+    border-right: none;
+}
+
 .red {
     color: #f00;
 }
